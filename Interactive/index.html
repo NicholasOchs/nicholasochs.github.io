@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function ButtonOne() {
 
-<div class="min-h-screen flex items-center justify-center space-x-6">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="alert('You pressed the button')">
-        Button1
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Button2
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Button3
-      </button>
-</div>
+    }
+    function ButtonTwo() {
+
+    }
+    function ButtonThree() {
+
+    }
+
+  </script>
+
+</head>
+<body>
+  <div class="min-h-screen flex items-center justify-center space-x-6">
+    <button id="B1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="ButtonOne()">
+      Button1
+    </button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="ButtonTwo()">
+      Button2
+    </button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="ButtonThree()">
+      Button3
+    </button>
+  </div>
+</body>
