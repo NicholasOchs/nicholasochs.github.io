@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function ButtonOne() {
+      if (document.getElementById('B1').style.background == "green"){
+        document.getElementById('B1').style.background = "red";
+      }
+      else{
+        document.getElementById('B1').style.background = "green";
+      }
+    }
+
+    function ButtonTwo() {
+      if (document.getElementById('B2').style.background == "green"){
+        document.getElementById('B2').style.background = "red";
+      }
+      else{
+        document.getElementById('B2').style.background = "green";
+      }
+    }
+
+    function ButtonThree() {
+      if (document.getElementById('B3').style.background == "green"){
+        document.getElementById('B3').style.background = "red";
+      }
+      else{
+        document.getElementById('B3').style.background = "green";
+      }
+    }
+
+    function ButtonFour() {
+      if (document.getElementById('B4').style.background == "green"){
+        document.getElementById('B4').style.background = "red";
+      }
+      else{
+        document.getElementById('B4').style.background = "green";
+      }
+    }
+
+    function Check(){
+      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"&&document.getElementById('B4').style.background == "green"){
+        alert("Matched")
+      }
+    }
+
+    function Press1(){
+      ButtonOne();
+      ButtonTwo();
+      Check();
+    }
+
+    function Press2(){
+      ButtonOne();
+      ButtonTwo();
+      ButtonThree();
+      Check();
+    }
+
+    function Press3(){
+      ButtonTwo();
+      ButtonThree();
+      ButtonFour();
+      Check();
+    }
+
+    function Press4(){
+      ButtonThree();
+      ButtonFour();
+      Check();
+    }
+  </script>
+
+</head>
+<body>
+  <div class="mt-40 flex items-center justify-center text-5xl">
+    Level 1
+  </div>
+  <div class="mt-6 flex items-center justify-center space-x-6">
+    <button id="B1" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
+    </button>
+    <button id="B2" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
+    </button>
+    <button id="B3" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
+    </button>
+    <button id="B4" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
+    </button>
+  </div>
+  <div class="mt-6 flex items-center justify-center space-x-6">
+    <button id="B1" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
+      Next Level
+    </button>
+  </div>
+</body>
