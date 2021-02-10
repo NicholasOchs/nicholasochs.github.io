@@ -28,10 +28,19 @@
       else{
         document.getElementById('B3').style.background = "green";
       }
+
+    function ButtonFour(){
+      if (document.getElementById('B4').style.background == "green"){
+        document.getElementById('B4').style.background = "red";
+      }
+      else{
+        document.getElementById('B4').style.background = "green";
+      }
+    }
     }
 
     function Check(){
-      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"){
+      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"&&document.getElementById('B4').style.background == "green"){
         alert("Matched")
       }
     }
@@ -43,13 +52,22 @@
     }
 
     function Press2(){
+      ButtonOne();
       ButtonTwo();
+      ButtonThree();
       Check();
     }
 
     function Press3(){
       ButtonTwo();
       ButtonThree();
+      ButtonFour();
+      Check();
+    }
+
+    function Press4(){
+      ButtonThree();
+      ButtonFour();
       Check();
     }
 
@@ -65,6 +83,9 @@
       Button2
     </button>
     <button id="B3" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
+      Button3
+    </button>
+    <button id="B4" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
       Button3
     </button>
   </div>
