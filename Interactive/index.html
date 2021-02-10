@@ -38,11 +38,21 @@
 
     function Press1(){
       ButtonOne();
-      Button3();
+      ButtonThree();
       Check();
     }
 
-    
+    function Press2(){
+      ButtonOne();
+      ButtonTwo();
+      Check();
+    }
+
+    function Press3(){
+      ButtonTwo();
+      Button3();
+      Check();
+    }
 
   </script>
 
@@ -52,10 +62,10 @@
     <button id="B1" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
       Button1
     </button>
-    <button id="B2" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="ButtonTwo()">
+    <button id="B2" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
       Button2
     </button>
-    <button id="B3" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="ButtonThree()">
+    <button id="B3" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
       Button3
     </button>
   </div>
