@@ -29,63 +29,63 @@
         document.getElementById('B3').style.background = "green";
       }
 
-    function ButtonFour() {
-      if (document.getElementById('B4').style.background == "green"){
-        document.getElementById('B4').style.background = "red";
+      function ButtonFour() {
+        if (document.getElementById('B4').style.background == "green"){
+          document.getElementById('B4').style.background = "red";
+        }
+        else{
+          document.getElementById('B4').style.background = "green";
+        }
       }
-      else{
-        document.getElementById('B4').style.background = "green";
+
+      function Check(){
+        if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"&&document.getElementById('B4').style.background == "green"){
+          alert("Matched")
+        }
       }
-    }
 
-    function Check(){
-      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"&&document.getElementById('B4').style.background == "green"){
-        alert("Matched")
+      function Press1(){
+        ButtonOne();
+        ButtonTwo();
+        Check();
       }
-    }
 
-    function Press1(){
-      ButtonOne();
-      ButtonTwo();
-      Check();
-    }
+      function Press2(){
+        ButtonOne();
+        ButtonTwo();
+        ButtonThree();
+        Check();
+      }
 
-    function Press2(){
-      ButtonOne();
-      ButtonTwo();
-      ButtonThree();
-      Check();
-    }
+      function Press3(){
+        ButtonTwo();
+        ButtonThree();
+        ButtonFour();
+        Check();
+      }
 
-    function Press3(){
-      ButtonTwo();
-      ButtonThree();
-      ButtonFour();
-      Check();
-    }
+      function Press4(){
+        ButtonThree();
+        ButtonFour();
+        Check();
+      }
 
-    function Press4(){
-      ButtonThree();
-      ButtonFour();
-      Check();
-    }
+    </script>
 
-  </script>
-
-</head>
-<body>
-  <div class="min-h-screen flex items-center justify-center space-x-6">
-    <button id="B1" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
-      Button1
-    </button>
-    <button id="B2" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
-      Button2
-    </button>
-    <button id="B3" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
-      Button3
-    </button>
-    <button id="B4" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
-      Button4
-    </button>
-  </div>
-</body>
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center space-x-6">
+      <button id="B1" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
+        Button1
+      </button>
+      <button id="B2" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
+        Button2
+      </button>
+      <button id="B3" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
+        Button3
+      </button>
+      <button id="B4" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
+        Button4
+      </button>
+    </div>
+  </body>
