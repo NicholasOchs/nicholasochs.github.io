@@ -10,10 +10,8 @@
       else{
         document.getElementById('B1').style.background = "green";
       }
-      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"){
-        alert("Matched")
-      }
     }
+
     function ButtonTwo() {
       if (document.getElementById('B2').style.background == "green"){
         document.getElementById('B2').style.background = "red";
@@ -21,10 +19,8 @@
       else{
         document.getElementById('B2').style.background = "green";
       }
-      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"){
-        alert("Matched")
-      }
     }
+
     function ButtonThree() {
       if (document.getElementById('B3').style.background == "green"){
         document.getElementById('B3').style.background = "red";
@@ -32,16 +28,28 @@
       else{
         document.getElementById('B3').style.background = "green";
       }
+    }
+
+    function Check(){
       if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"){
         alert("Matched")
       }
     }
+
+    function Press1(){
+      ButtonOne();
+      Button3();
+      Check();
+    }
+
+    
+
   </script>
 
 </head>
 <body>
   <div class="min-h-screen flex items-center justify-center space-x-6">
-    <button id="B1" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="ButtonOne()">
+    <button id="B1" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
       Button1
     </button>
     <button id="B2" class="bg-red-600 text-white font-bold py-2 px-4 rounded" onclick="ButtonTwo()">
