@@ -39,9 +39,67 @@
       }
     }
 
+    function ButtonFive() {
+      if (document.getElementById('B5').style.background == "green"){
+        document.getElementById('B5').style.background = "red";
+      }
+      else{
+        document.getElementById('B5').style.background = "green";
+      }
+    }
+
+    function ButtonSix() {
+      if (document.getElementById('B6').style.background == "green"){
+        document.getElementById('B6').style.background = "red";
+      }
+      else{
+        document.getElementById('B6').style.background = "green";
+      }
+    }
+
+    function ButtonSeven() {
+      if (document.getElementById('B7').style.background == "green"){
+        document.getElementById('B7').style.background = "red";
+      }
+      else{
+        document.getElementById('B7').style.background = "green";
+      }
+    }
+
+    function ButtonEight() {
+      if (document.getElementById('B8').style.background == "green"){
+        document.getElementById('B8').style.background = "red";
+      }
+      else{
+        document.getElementById('B8').style.background = "green";
+      }
+    }
+
+    function ButtonNine() {
+      if (document.getElementById('B9').style.background == "green"){
+        document.getElementById('B9').style.background = "red";
+      }
+      else{
+        document.getElementById('B9').style.background = "green";
+      }
+    }
+
+    function ButtonTen() {
+      if (document.getElementById('B10').style.background == "green"){
+        document.getElementById('B10').style.background = "red";
+      }
+      else{
+        document.getElementById('B10').style.background = "green";
+      }
+    }
+
+    function ShowNext() {
+      document.getElementById('NextButton').style.visibility = "visible";
+    }
+
     function Check(){
-      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"&&document.getElementById('B4').style.background == "green"){
-        alert("Matched")
+      if (document.getElementById('B1').style.background == "green"&&document.getElementById('B2').style.background == "green"&&document.getElementById('B3').style.background == "green"&&document.getElementById('B4').style.background == "green"&&document.getElementById('B5').style.background == "green"&&document.getElementById('B6').style.background == "green"&&document.getElementById('B7').style.background == "green"&&document.getElementById('B8').style.background == "green"&&document.getElementById('B9').style.background == "green"&&document.getElementById('B10').style.background == "green"){
+        ShowNext();
       }
     }
 
@@ -70,6 +128,36 @@
       ButtonFour();
       Check();
     }
+
+    function Press5(){
+      ButtonFive();
+      Check();
+    }
+
+    function Press6(){
+      ButtonSix();
+      Check();
+    }
+
+    function Press7(){
+      ButtonSeven();
+      Check();
+    }
+
+    function Press8(){
+      ButtonEight();
+      Check();
+    }
+
+    function Press9(){
+      ButtonNine();
+      Check();
+    }
+
+    function Press10(){
+      ButtonTen();
+      Check();
+    }
   </script>
 
 </head>
@@ -86,15 +174,24 @@
     </button>
     <button id="B4" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
     </button>
+    <button id="B5" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press5()">
+    </button>
   </div>
   <div class="mt-6 flex items-center justify-center space-x-6">
-    <button id="B1" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
+    <button id="B6" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press6()">
     </button>
-    <button id="B2" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
+    <button id="B7" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press7()">
     </button>
-    <button id="B3" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
+    <button id="B8" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press8()">
     </button>
-    <button id="B4" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
+    <button id="B9" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press9()">
+    </button>
+    <button id="B10" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press10()">
+    </button>
+  </div>
+  <div class="mt-6 flex items-center justify-center space-x-6">
+    <button id="NextButton" class="invisible bg-red-600 text-white font-bold py-2 px-4 rounded">
+      <a href="https://nicholasochs.github.io/Lv3/">Next Level</a>
     </button>
   </div>
 </body>
