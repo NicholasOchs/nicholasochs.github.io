@@ -266,6 +266,25 @@
       Buttonfiftheen();
       Check();
     }
+
+    function reset(){
+      document.getElementById('B1').style.background = "red";
+      document.getElementById('B2').style.background = "red";
+      document.getElementById('B3').style.background = "red";
+      document.getElementById('B4').style.background = "red";
+      document.getElementById('B5').style.background = "red";
+      document.getElementById('B6').style.background = "red";
+      document.getElementById('B7').style.background = "red";
+      document.getElementById('B8').style.background = "red";
+      document.getElementById('B9').style.background = "red";
+      document.getElementById('B10').style.background = "red";
+      document.getElementById('B11').style.background = "red";
+      document.getElementById('B12').style.background = "red";
+      document.getElementById('B13').style.background = "red";
+      document.getElementById('B14').style.background = "red";
+      document.getElementById('B15').style.background = "red";
+    }
+
   </script>
 
 </head>
@@ -310,6 +329,7 @@
     </button>
   </div>
   <div class="mt-6 flex items-center justify-center space-x-6">
+    <button id="reset" class="bg-yellow-300 text-black 2-24 h-10 space-x-6 py-2 px-4 rounded" onclick="reset()">Reset</button>
     <button id="NextButton" class="invisible bg-red-600 text-white font-bold py-2 px-4 rounded">
       <a href="https://nicholasochs.github.io/Lv4/">Next Level</a>
     </button>
