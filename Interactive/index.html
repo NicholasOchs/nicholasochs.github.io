@@ -75,6 +75,14 @@
       ButtonFour();
       Check();
     }
+
+    function reset(){
+      document.getElementById('B1').style.background = "red";
+      document.getElementById('B2').style.background = "red";
+      document.getElementById('B3').style.background = "red";
+      document.getElementById('B4').style.background = "red";
+    }
+
   </script>
 
 </head>
@@ -94,6 +102,7 @@
     </button>
   </div>
   <div class="mt-6 flex items-center justify-center space-x-6">
+    <button id="reset" class="bg-yellow-700 text-black">Reset</button>
     <button id="NextButton" class="invisible bg-red-600 text-white font-bold py-2 px-4 rounded">
       <a href="https://nicholasochs.github.io/Lv2/">Next Level</a>
     </button>
