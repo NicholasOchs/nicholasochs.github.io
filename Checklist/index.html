@@ -259,6 +259,23 @@
             document.getElementById("GA5").checked = false;
         }
 
+        function L(){
+            document.getElementById("Flaps 10 below 110").style.visibility="visible" 
+            document.getElementById("L1").checked = false;
+
+            document.getElementById("Flaps Full below 85").style.visibility="visible" 
+            document.getElementById("L2").checked = false;
+
+            document.getElementById("Normal App 65 knots").style.visibility="visible" 
+            document.getElementById("L3").checked = false;
+
+            document.getElementById("Touchdown mainwheels").style.visibility="visible" 
+            document.getElementById("L4").checked = false;
+
+            document.getElementById("Braking minimum").style.visibility="visible" 
+            document.getElementById("L5").checked = false;
+        }
+
     </script>
 </head>
 
@@ -603,7 +620,7 @@
 
 
 
-            <br>Go Around<br>
+            <br>Go Around
             <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="GA()">Reset</button>
             <div id="Throttle FULL POWER" onclick="handleClick(id)">
                 <input type="checkbox" id="GA1">
@@ -628,25 +645,26 @@
 
 
 
-            <br>Landing<br>
+            <br>Landing
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="L()">Reset</button>
             <div id="Flaps 10 below 110" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="L1">
                 <label for="Flaps 10 below 110"> Flaps 10 below 110</label><br>
             </div>
             <div id="Flaps Full below 85" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="L2">
                 <label for="Flaps Full below 85"> Flaps Full below 85</label><br>
             </div>
             <div id="Normal App 65 knots" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="L3">
                 <label for="Normal App 65 knots"> Normal App 65 knots</label><br>
             </div>
             <div id="Touchdown mainwheels" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="L4">
                 <label for="Touchdown mainwheels"> Touchdown Mainwheels</label><br>
             </div>
             <div id="Braking minimum" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="L5">
                 <label for="Braking minimum"> Braking minimum</label><br>
             </div>
 
