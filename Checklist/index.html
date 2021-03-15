@@ -59,24 +59,42 @@
             </div>
 
             <br>Engine Start<br>
-            <input type="checkbox" id="Mixture" name="Mixture">
-            <label for="Mixture"> Mixture</label><br>
-            <input type="checkbox" id="Carburetor Heat" name="Carburetor Heat">
-            <label for="Carburetor Heat"> Carburetor Heat</label><br>
-            <input type="checkbox" id="Prime" name="Prime">
-            <label for="Prime"> Prime</label><br>
-            <input type="checkbox" id="Master" name="Master">
-            <label for="Master"> Master</label><br>
-            <input type="checkbox" id="Throttle" name="Throttle">
-            <label for="Throttle"> Throttle</label><br>
-            <input type="checkbox" id="Propeller Area" name="Propeller Area">
-            <label for="Propeller Area"> Propeller Area</label><br>
-            <input type="checkbox" id="Ignition" name="Ignition">
-            <label for="Ignition"> Ignition</label><br>
-            <input type="checkbox" id="Engine RPM" name="Engine RPM">
-            <label for="Engine RPM"> Engine RPM</label><br>
-            <input type="checkbox" id="Oil Pressure" name="Oil Pressure">
-            <label for="Oil Pressure"> Oil Pressure</label><br>
+            <div id="Mixture" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Mixture"> Mixture</label><br>
+            </div>
+            <div id="Carburetor Heat" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Carburetor Heat"> Carburetor Heat</label><br>
+            </div>
+            <div id="Prime" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Prime"> Prime</label><br>
+            </div>
+            <div id="Master" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Master"> Master</label><br>
+            </div>
+            <div id="Throttle" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Throttle"> Throttle</label><br>
+            </div>
+            <div id="Propeller Area" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Propeller Area"> Propeller Area</label><br>
+            </div>
+            <div id="Ignition" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Ignition"> Ignition</label><br>
+            </div>
+            <div id="Engine RPM" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Engine RPM"> Engine RPM</label><br>
+            </div>
+            <div id="Oil Pressure" onclick="handleClick(id)">
+                <input type="checkbox">
+                <label for="Oil Pressure"> Oil Pressure</label><br>
+            </div>
 
             <br>Before Taxi<br>
             <input type="checkbox" id="Flaps" name="Flaps">
