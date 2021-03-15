@@ -10,7 +10,7 @@
 
         function BES(){
             document.getElementById("Preflight").style.visibility="visible"
-            document.getElementById("Preflight").checked = "false";
+            document.getElementById("BES1").checked = false;
         }
 
     </script>
@@ -27,7 +27,7 @@
             <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="BES()">Reset</button>
             <br>
             <div id="Preflight" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BES1">
                 <label for="Preflight"> Preflight</label><br>
             </div>
             <div id="Fuel Drain Tool" onclick="handleClick(id)">
