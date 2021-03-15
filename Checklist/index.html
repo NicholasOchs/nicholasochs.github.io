@@ -240,7 +240,23 @@
 
             document.getElementById("Landing Light as Required").style.visibility="visible" 
             document.getElementById("BL5").checked = false;
+        }
 
+        function GA(){
+            document.getElementById("Throttle FULL POWER").style.visibility="visible" 
+            document.getElementById("GA1").checked = false;
+
+            document.getElementById("Carburetor Heat off").style.visibility="visible" 
+            document.getElementById("GA2").checked = false;
+
+            document.getElementById("Flaps Immediately 20").style.visibility="visible" 
+            document.getElementById("GA3").checked = false;
+
+            document.getElementById("Climb Speed 55 knots").style.visibility="visible" 
+            document.getElementById("GA4").checked = false;
+
+            document.getElementById("Flaps up Once Clear").style.visibility="visible" 
+            document.getElementById("GA5").checked = false;
         }
 
     </script>
@@ -588,24 +604,25 @@
 
 
             <br>Go Around<br>
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="GA()">Reset</button>
             <div id="Throttle FULL POWER" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="GA1">
                 <label for="Throttle FULL POWER"> Throttle FULL POWER</label><br>
             </div>
             <div id="Carburetor Heat off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="GA2">
                 <label for="Carburetor Heat off"> Carburetor Heat Off</label><br>
             </div>
             <div id="Flaps Immediately 20" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="GA3">
                 <label for="Flaps Immediately 20"> Flaps Immediately 20</label><br>
             </div>
             <div id="Climb Speed 55 knots" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="GA4">
                 <label for="Climb Speed 55 knots"> Climb Speed 55 knots</label><br>
             </div>
             <div id="Flaps up Once Clear" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="GA5">
                 <label for="Flaps up Once Clear"> Flaps up Once Clear</label><br>
             </div>
 
