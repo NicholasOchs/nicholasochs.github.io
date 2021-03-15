@@ -5,7 +5,13 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script>
         function handleClick(cb) {
-            document.getElementById(cb).style.visibility="hidden"}
+            document.getElementById(cb).style.visibility="hidden"
+        }
+
+        function BES(){
+            document.getElementsByName("BES").style.visibility="visible"
+        }
+
     </script>
 </head>
 
@@ -16,44 +22,47 @@
             <br>For use only with an approved Cessna checklist
         </h1>
         <h2>
-            <br>Before Engine Start<br>
-            <div id="Preflight" onclick="handleClick(id)">
+            <br>Before Engine Start
+            <button id="B1" class=" w-10 h-5 font-bold py-2 px-4 rounded" onclick="BES()">
+            </button>
+            <br>
+            <div id="Preflight" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Preflight"> Preflight</label><br>
             </div>
-            <div id="Fuel Drain Tool" onclick="handleClick(id)">
+            <div id="Fuel Drain Tool" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Fuel Drain Tool"> Fuel Drain Tool</label><br>
             </div>
-            <div id="Passenger briefing" onclick="handleClick(id)">
+            <div id="Passenger briefing" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Passenger briefing"> Passenger briefing</label><br>
             </div>
-            <div id="Seats" onclick="handleClick(id)">
+            <div id="Seats" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Seats"> Seats</label><br>
             </div>
-            <div id="Seat Belt & Harness" onclick="handleClick(id)">
+            <div id="Seat Belt & Harness" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Seat Belt & Harness"> Seat Belt & Harness</label><br>
             </div>
-            <div id="Brakes Set" onclick="handleClick(id)">
+            <div id="Brakes Set" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Brakes Set"> Brakes Set</label><br>
             </div>
-            <div id="Avionics Master Off" onclick="handleClick(id)">
+            <div id="Avionics Master Off" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Avionics Master Off"> Avionics Master Off</label><br>
             </div>
-            <div id="Circuit Breakers" onclick="handleClick(id)">
+            <div id="Circuit Breakers" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Circuit Breakers"> Circuit Breakers</label><br>
             </div>
-            <div id="Fuel Selector" onclick="handleClick(id)">
+            <div id="Fuel Selector" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
-                <label for="Fuel Selector"> Fuel Selector</label><br>
+                <label for="Fuel Selector"> name="BES" Fuel Selector</label><br>
             </div>
-            <div id="Beacon Light" onclick="handleClick(id)">
+            <div id="Beacon Light" name="BES" onclick="handleClick(id)">
                 <input type="checkbox">
                 <label for="Beacon Light"> Beacon Light</label><br>
             </div>
