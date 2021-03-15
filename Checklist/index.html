@@ -69,6 +69,30 @@
             document.getElementById("ES9").checked = false;
         }
 
+        function BT(){
+            document.getElementById("Flaps").style.visibility="visible" 
+            document.getElementById("BT1").checked = false;
+
+            document.getElementById("Avionics Master On").style.visibility="visible" 
+            document.getElementById("BT2").checked = false;
+
+            document.getElementById("NAV lights").style.visibility="visible" 
+            document.getElementById("BT3").checked = false;
+
+            document.getElementById("Transponder").style.visibility="visible" 
+            document.getElementById("BT4").checked = false;
+
+            document.getElementById("ATIS").style.visibility="visible" 
+            document.getElementById("BT5").checked = false;
+
+            document.getElementById("Brakes Release and Test").style.visibility="visible" 
+            document.getElementById("BT6").checked = false;
+
+            document.getElementById("Communication").style.visibility="visible" 
+            document.getElementById("BT7").checked = false;
+
+        }
+
     </script>
 </head>
 
@@ -167,32 +191,33 @@
 
 
             <br>Before Taxi<br>
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="BT()">Reset</button>
             <div id="Flaps" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT1">
                 <label for="Flaps"> Flaps</label><br>
             </div>
             <div id="Avionics Master On" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT2">
                 <label for="Avionics Master On"> Avionics Master On</label><br>
             </div>
             <div id="NAV lights" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT3">
                 <label for="NAV lights"> NAV lights</label><br>
             </div>
             <div id="Transponder" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT4">
                 <label for="Transponder"> Transponder</label><br>
             </div>
             <div id="ATIS" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT5">
                 <label for="ATIS"> ATIS</label><br>
             </div>
             <div id="Brakes Release and Test" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT6">
                 <label for="Brakes Release and Test"> Brakes Release and Test</label><br>
             </div>
             <div id="Communication" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BT7">
                 <label for="Communication"> Communication</label><br>
             </div>
 
