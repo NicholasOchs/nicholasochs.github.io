@@ -3,6 +3,10 @@
 
 <head>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function handleClick(cb) {
+            document.getElementById(cb).style.visibility="hidden"}
+    </script>
 </head>
 
 <body>
@@ -13,25 +17,25 @@
         </h1>
         <h2>
             Before Engine Start<br>
-            <input type="checkbox" id="Preflight" name="Preflight">
+            <input type="checkbox" onclick="handleClick(this);" id="Preflight" name="BES">
             <label for="Preflight"> Preflight</label><br>
-            <input type="checkbox" id="Fuel Drain Tool" name="Fuel Drain Tool">
+            <input type="checkbox" id="Fuel Drain Tool" name="BES">
             <label for="Fuel Drain Tool"> Fuel Drain Tool</label><br>
-            <input type="checkbox" id="Passenger briefing" name="Passenger briefing">
+            <input type="checkbox" id="Passenger briefing" name="BES">
             <label for="Passenger briefing"> Passenger briefing</label><br>
-            <input type="checkbox" id="Seats" name="Seats">
+            <input type="checkbox" id="Seats" name="BES">
             <label for="Seats"> Seats</label><br>
-            <input type="checkbox" id="Seat Belt & Harness" name="Seat Belt & Harness">
+            <input type="checkbox" id="Seat Belt & Harness" name="BES">
             <label for="Seat Belt & Harness"> Seat Belt & Harness</label><br>
-            <input type="checkbox" id="Brakes" name="Brakes">
+            <input type="checkbox" id="Brakes" name="BES">
             <label for="Brakes"> Brakes</label><br>
-            <input type="checkbox" id="Avionics Master" name="Avionics Master">
+            <input type="checkbox" id="Avionics Master" name="BES">
             <label for="Avionics Master"> Avionics Master</label><br>
-            <input type="checkbox" id="Circuit Breakers" name="Circuit Breakers">
+            <input type="checkbox" id="Circuit Breakers" name="BES">
             <label for="Circuit Breakers"> Circuit Breakers</label><br>
-            <input type="checkbox" id="Fuel Selector" name="Fuel Selector">
+            <input type="checkbox" id="Fuel Selector" name="BES">
             <label for="Fuel Selector"> Fuel Selector</label><br>
-            <input type="checkbox" id="Beacon Light" name="Beacon Light">
+            <input type="checkbox" id="Beacon Light" name="BES">
             <label for="Beacon Light"> Beacon Light</label><br>
 
             <br>Engine Start<br>
