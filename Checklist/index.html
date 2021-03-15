@@ -198,7 +198,50 @@
             document.getElementById("Landing Light Off").style.visibility="visible" 
             document.getElementById("CR4").checked = false;
         }
+
+        function D(){
+            document.getElementById("ATIS Listen and Copy").style.visibility="visible" 
+            document.getElementById("D1").checked = false;
+
+            document.getElementById("Altimeter Set").style.visibility="visible" 
+            document.getElementById("D2").checked = false;
+
+            document.getElementById("Throttle as Required").style.visibility="visible" 
+            document.getElementById("D3").checked = false;
+
+            document.getElementById("Carburetor Heat as Required").style.visibility="visible" 
+            document.getElementById("D4").checked = false;
+
+            document.getElementById("Trim as Required").style.visibility="visible" 
+            document.getElementById("D5").checked = false;
+
+            document.getElementById("Mixture as Required").style.visibility="visible" 
+            document.getElementById("D6").checked = false;
+
+            document.getElementById("Fuel Selector2").style.visibility="visible" 
+            document.getElementById("D7").checked = false;
+
+            document.getElementById("Avionics set").style.visibility="visible" 
+            document.getElementById("D8").checked = false;
+        }
         
+        function BL(){
+            document.getElementById("Seats & Seat Belts Secured").style.visibility="visible" 
+            document.getElementById("BL1").checked = false;
+
+            document.getElementById("Fuel Selector Both").style.visibility="visible" 
+            document.getElementById("BL2").checked = false;
+
+            document.getElementById("Mixture Rich2").style.visibility="visible" 
+            document.getElementById("BL3").checked = false;
+
+            document.getElementById("Carburetor Heat as Required2").style.visibility="visible" 
+            document.getElementById("BL4").checked = false;
+
+            document.getElementById("Landing Light as Required").style.visibility="visible" 
+            document.getElementById("BL5").checked = false;
+
+        }
 
     </script>
 </head>
@@ -482,61 +525,63 @@
 
 
 
-            <br>Descent<br>
+            <br>Descent
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="D()">Reset</button>
             <div id="ATIS Listen and Copy" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D1">
                 <label for="ATIS Listen and Copy"> ATIS Listen and Copy</label><br>
             </div>
             <div id="Altimeter Set" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D2">
                 <label for="Altimeter Set"> Altimeter Set</label><br>
             </div>
             <div id="Throttle as Required" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D3">
                 <label for="Throttle as Required"> Throttle as Required</label><br>
             </div>
             <div id="Carburetor Heat as Required" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D4">
                 <label for="Carburetor Heat as Required"> Carburetor Heat as Required</label><br>
             </div>
             <div id="Trim as Required" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D5">
                 <label for="Trim as Required"> Trim as Required</label><br>
             </div>
             <div id="Mixture as Required" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D6">
                 <label for="Mixture as Required"> Mixture as Required</label><br>
             </div>
             <div id="Fuel Selector2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D7">
                 <label for="Fuel Selector2"> Fuel Selector</label><br>
             </div>
             <div id="Avionics set" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="D8">
                 <label for="Avionics set"> Avionics Set</label><br>
             </div>
 
 
 
-            <br>Before Landing<br>
+            <br>Before Landing
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="BL()">Reset</button>
             <div id="Seats & Seat Belts Secured" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BL1">
                 <label for="Seats & Seat Belts Secured"> Seats & Seat Belts Secured</label><br>
             </div>
             <div id="Fuel Selector Both" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BL2">
                 <label for="Fuel Selector Both"> Fuel Selector Both</label><br>
             </div>
             <div id="Mixture Rich2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BL3">
                 <label for="Mixture Rich2"> Mixture Rich2</label><br>
             </div>
             <div id="Carburetor Heat as Required2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BL4">
                 <label for="Carburetor Heat as Required2"> Carburetor Heat as Required</label><br>
             </div>
             <div id="Landing Light as Required" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BL5">
                 <label for="Landing Light as Required"> Landing Light as Required</label><br>
             </div>
 
