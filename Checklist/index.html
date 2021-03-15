@@ -40,6 +40,35 @@
             document.getElementById("BES10").checked = false;
         }
 
+        function ES(){
+            document.getElementById("Mixture").style.visibility="visible" 
+            document.getElementById("ES1").checked = false;
+
+            document.getElementById("Carburetor Heat Cold").style.visibility="visible"
+            document.getElementById("ES2").checked = false;
+
+            document.getElementById("Prime").style.visibility="visible"
+            document.getElementById("ES3").checked = false;
+
+            document.getElementById("Master").style.visibility="visible"
+            document.getElementById("ES4").checked = false;
+
+            document.getElementById("Throttle").style.visibility="visible"
+            document.getElementById("ES5").checked = false;
+
+            document.getElementById("Propeller Area").style.visibility="visible"
+            document.getElementById("ES6").checked = false;
+
+            document.getElementById("Ignition").style.visibility="visible"
+            document.getElementById("ES7").checked = false;
+
+            document.getElementById("Engine RPM").style.visibility="visible"
+            document.getElementById("ES8").checked = false;
+
+            document.getElementById("Oil Pressure").style.visibility="visible"
+            document.getElementById("ES9").checked = false;
+        }
+
     </script>
 </head>
 
@@ -94,43 +123,48 @@
                 <label for="Beacon Light"> Beacon Light</label><br>
             </div>
 
+
+
             <br>Engine Start<br>
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="ES()">Reset</button>
             <div id="Mixture" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES1">
                 <label for="Mixture"> Mixture</label><br>
             </div>
             <div id="Carburetor Heat Cold" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES2">
                 <label for="Carburetor Heat Cold"> Carburetor Heat Cold</label><br>
             </div>
             <div id="Prime" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES3">
                 <label for="Prime"> Prime</label><br>
             </div>
             <div id="Master" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES4">
                 <label for="Master"> Master</label><br>
             </div>
             <div id="Throttle" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES5">
                 <label for="Throttle"> Throttle</label><br>
             </div>
             <div id="Propeller Area" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES6">
                 <label for="Propeller Area"> Propeller Area</label><br>
             </div>
             <div id="Ignition" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES7">
                 <label for="Ignition"> Ignition</label><br>
             </div>
             <div id="Engine RPM" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES8">
                 <label for="Engine RPM"> Engine RPM</label><br>
             </div>
             <div id="Oil Pressure" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="ES9">
                 <label for="Oil Pressure"> Oil Pressure</label><br>
             </div>
+
+
 
             <br>Before Taxi<br>
             <div id="Flaps" onclick="handleClick(id)">
@@ -161,6 +195,8 @@
                 <input type="checkbox">
                 <label for="Communication"> Communication</label><br>
             </div>
+
+
 
             <br>Before Takeoff (Runup)<br>
             <div id="Brakes Set2" onclick="handleClick(id)">
@@ -240,6 +276,8 @@
                 <label for="Break Release"> Break Release</label><br>
             </div>
 
+
+
             <br>At Takeoff<br>
             <div id="Wing Flaps 0" onclick="handleClick(id)">
                 <input type="checkbox">
@@ -261,6 +299,8 @@
                 <input type="checkbox">
                 <label for="Climb Speed 73 knots"> Climb Speed 73 knots</label><br>
             </div>
+
+
 
             <br>Climb<br>
             <div id="Throttle Full Power" onclick="handleClick(id)">
@@ -284,6 +324,8 @@
                 <label for="Cruise Climb 80 knots"> Cruise Climb 80 knots</label><br>
             </div>
 
+
+
             <br>Cruise<br>
             <div id="Throttle 2200-2450 RPM" onclick="handleClick(id)">
                 <input type="checkbox">
@@ -301,6 +343,8 @@
                 <input type="checkbox">
                 <label for="Landing Light Off"> Landing Light Off</label><br>
             </div>
+
+
 
             <br>Descent<br>
             <div id="ATIS Listen and Copy" onclick="handleClick(id)">
@@ -336,6 +380,8 @@
                 <label for="Avionics set"> Avionics Set</label><br>
             </div>
 
+
+
             <br>Before Landing<br>
             <div id="Seats & Seat Belts Secured" onclick="handleClick(id)">
                 <input type="checkbox">
@@ -357,6 +403,8 @@
                 <input type="checkbox">
                 <label for="Landing Light as Required"> Landing Light as Required</label><br>
             </div>
+
+
 
             <br>Go Around<br>
             <div id="Throttle FULL POWER" onclick="handleClick(id)">
@@ -380,6 +428,8 @@
                 <label for="Flaps up Once Clear"> Flaps up Once Clear</label><br>
             </div>
 
+
+
             <br>Landing<br>
             <div id="Flaps 10 below 110" onclick="handleClick(id)">
                 <input type="checkbox">
@@ -402,6 +452,8 @@
                 <label for="Braking minimum"> Braking minimum</label><br>
             </div>
 
+
+
             <br>After Landing<br>
             <div id="Flaps up" onclick="handleClick(id)">
                 <input type="checkbox">
@@ -420,6 +472,8 @@
                 <label for="Strobe Lights Off"> Strobe Lights Off</label><br>
             </div>
 
+
+            
             <br>Shutdown
             <div id="Avionics Master Off2" onclick="handleClick(id)">
                 <input type="checkbox">
