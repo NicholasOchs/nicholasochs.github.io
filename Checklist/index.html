@@ -276,6 +276,24 @@
             document.getElementById("L5").checked = false;
         }
 
+        function AL(){
+            document.getElementById("Flaps up").style.visibility="visible" 
+            document.getElementById("AL1").checked = false;
+
+            document.getElementById("Carburetor Heat off2").style.visibility="visible" 
+            document.getElementById("AL2").checked = false;
+
+            document.getElementById("Landing Lights Off").style.visibility="visible" 
+            document.getElementById("AL3").checked = false;
+
+            document.getElementById("Strobe Lights Off").style.visibility="visible" 
+            document.getElementById("AL4").checked = false;
+        }
+
+        function S(){
+            
+        }
+
     </script>
 </head>
 
@@ -670,21 +688,22 @@
 
 
 
-            <br>After Landing<br>
+            <br>After Landing
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="AL()">Reset</button>
             <div id="Flaps up" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="AL1">
                 <label for="Flaps up"> Flaps Up</label><br>
             </div>
             <div id="Carburetor Heat off2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="AL2">
                 <label for="Carburetor Heat off2"> Carburetor Heat Off</label><br>
             </div>
             <div id="Landing Lights Off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="AL3">
                 <label for="Landing Lights Off"> Landing Lights Off</label><br>
             </div>
             <div id="Strobe Lights Off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="AL4">
                 <label for="Strobe Lights Off"> Strobe Lights Off</label><br>
             </div>
 
