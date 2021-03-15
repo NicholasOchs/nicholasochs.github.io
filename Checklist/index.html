@@ -184,6 +184,20 @@
             document.getElementById("Cruise Climb 80 knots").style.visibility="visible" 
             document.getElementById("C5").checked = false;
         }
+
+        function CR(){
+            document.getElementById("Throttle 2200-2450 RPM").style.visibility="visible" 
+            document.getElementById("CR1").checked = false;
+
+            document.getElementById("Trim Set").style.visibility="visible" 
+            document.getElementById("CR2").checked = false;
+
+            document.getElementById("Mixture lean above 3000").style.visibility="visible" 
+            document.getElementById("CR3").checked = false;
+
+            document.getElementById("Landing Light Off").style.visibility="visible" 
+            document.getElementById("CR4").checked = false;
+        }
         
 
     </script>
@@ -447,21 +461,22 @@
 
 
 
-            <br>Cruise<br>
+            <br>Cruise
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="CR()">Reset</button>
             <div id="Throttle 2200-2450 RPM" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="CR1">
                 <label for="Throttle 2200-2450 RPM"> Throttle 2200-2450 RPM</label><br>
             </div>
             <div id="Trim Set" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="CR2">
                 <label for="Trim Set"> Trim Set</label><br>
             </div>
             <div id="Mixture lean above 3000" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="CR3">
                 <label for="Mixture lean above 3000"> Mixture lean above 3000</label><br>
             </div>
             <div id="Landing Light Off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="CR4">
                 <label for="Landing Light Off"> Landing Light Off</label><br>
             </div>
 
