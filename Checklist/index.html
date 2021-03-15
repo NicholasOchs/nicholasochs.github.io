@@ -93,7 +93,63 @@
         }
 
         function BTR(){
+            document.getElementById("Brakes Set2").style.visibility="visible" 
+            document.getElementById("BTR1").checked = false;
 
+            document.getElementById("Flight Instrument").style.visibility="visible" 
+            document.getElementById("BTR2").checked = false;
+
+            document.getElementById("Engine Instruments").style.visibility="visible" 
+            document.getElementById("BTR3").checked = false;
+
+            document.getElementById("Avionics").style.visibility="visible" 
+            document.getElementById("BTR4").checked = false;
+
+            document.getElementById("Mixture Rich below 3000").style.visibility="visible" 
+            document.getElementById("BTR5").checked = false;
+
+            document.getElementById("Throttle 1700").style.visibility="visible" 
+            document.getElementById("BTR6").checked = false;
+
+            document.getElementById("Magnetos").style.visibility="visible" 
+            document.getElementById("BTR7").checked = false;
+
+            document.getElementById("Carburetor Heat on").style.visibility="visible" 
+            document.getElementById("BTR8").checked = false;
+
+            document.getElementById("Engine Instruments Green").style.visibility="visible" 
+            document.getElementById("BTR9").checked = false;
+
+            document.getElementById("Ammeter").style.visibility="visible" 
+            document.getElementById("BTR10").checked = false;
+
+            document.getElementById("Suction Gage").style.visibility="visible" 
+            document.getElementById("BTR11").checked = false;
+
+            document.getElementById("Throttle 800-1000 RPM").style.visibility="visible" 
+            document.getElementById("BTR12").checked = false;
+
+            document.getElementById("Throttle friction lock").style.visibility="visible" 
+            document.getElementById("BTR13").checked = false;
+
+            document.getElementById("Flight Controls").style.visibility="visible" 
+            document.getElementById("BTR14").checked = false;
+
+            document.getElementById("Secure Doors & Windows").style.visibility="visible" 
+            document.getElementById("BTR15").checked = false;
+
+            document.getElementById("Transponder Code").style.visibility="visible" 
+            document.getElementById("BTR16").checked = false;
+
+            document.getElementById("Light Strobe").style.visibility="visible" 
+            document.getElementById("BTR17").checked = false;
+
+            document.getElementById("Pitot Heat").style.visibility="visible" 
+            document.getElementById("BTR18").checked = false;
+
+            document.getElementById("Break Release").style.visibility="visible" 
+            document.getElementById("BTR19").checked = false;
+        }
         }
 
     </script>
@@ -226,81 +282,82 @@
 
 
 
-            <br>Before Takeoff (Runup)<br>
+            <br>Before Takeoff (Runup)
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="BTR()">Reset</button>
             <div id="Brakes Set2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR1">
                 <label for="Brakes Set2"> Brakes Set</label><br>
             </div>
             <div id="Flight Instrument" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR2">
                 <label for="Flight Instrument"> Flight Instrument</label><br>
             </div>
             <div id="Engine Instruments" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR3">
                 <label for="Engine Instruments"> Engine Instruments</label><br>
             </div>
             <div id="Avionics" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR4">
                 <label for="Avionics"> Avionics</label><br>
             </div>
             <div id="Mixture Rich below 3000" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR5">
                 <label for="Mixture Rich below 3000"> Mixture Rich below 3000</label><br>
             </div>
             <div id="Throttle 1700" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR6">
                 <label for="Throttle 1700"> Throttle 1700</label><br>
             </div>
             <div id="Magnetos" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR7">
                 <label for="Magnetos"> Magnetos</label><br>
             </div>
             <div id="Carburetor Heat on" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR8">
                 <label for="Carburetor Heat on"> Carburetor Heat on</label><br>
             </div>
             <div id="Engine Instruments Green" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR9">
                 <label for="Engine Instruments Green"> Engine Instruments Green</label><br>
             </div>
             <div id="Ammeter" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR10">
                 <label for="Ammeter"> Ammeter</label><br>
             </div>
             <div id="Suction Gage" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR11">
                 <label for="Suction Gage"> Suction Gage</label><br>
             </div>
             <div id="Throttle 800-1000 RPM" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR12">
                 <label for="Throttle 800-1000 RPM"> Throttle 800-1000 RPM</label><br>
             </div>
             <div id="Throttle friction lock" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR13">
                 <label for="Throttle friction lock"> Throttle friction lock</label><br>
             </div>
             <div id="Flight Controls" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR14">
                 <label for="Flight Controls"> Flight Controls</label><br>
             </div>
             <div id="Secure Doors & Windows" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR15">
                 <label for="Secure Doors & Windows"> Secure Doors & Windows</label><br>
             </div>
             <div id="Transponder Code" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR16">
                 <label for="Transponder Code"> Transponder Code</label><br>
             </div>
             <div id="Light Strobe" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR17">
                 <label for="Light Strobe"> Light Strobe</label><br>
             </div>
             <div id="Pitot Heat" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR18">
                 <label for="Pitot Heat"> Pitot Heat</label><br>
             </div>
             <div id="Break Release" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="BTR19">
                 <label for="Break Release"> Break Release</label><br>
             </div>
 
