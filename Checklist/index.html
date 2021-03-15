@@ -291,7 +291,29 @@
         }
 
         function S(){
-            
+            document.getElementById("Avionics Master Off2").style.visibility="visible" 
+            document.getElementById("S1").checked = false;
+
+            document.getElementById("Throttle 800-1000 RPM2").style.visibility="visible" 
+            document.getElementById("S2").checked = false;
+
+            document.getElementById("Mixture Idle Cut-Off").style.visibility="visible" 
+            document.getElementById("S3").checked = false;
+
+            document.getElementById("Magnetos Off").style.visibility="visible" 
+            document.getElementById("S4").checked = false;
+
+            document.getElementById("Master Switch Off").style.visibility="visible" 
+            document.getElementById("S5").checked = false;
+
+            document.getElementById("Control Wheel Lock Install").style.visibility="visible" 
+            document.getElementById("S6").checked = false;
+
+            document.getElementById("Record Hobbs, Tach on invoice").style.visibility="visible" 
+            document.getElementById("S7").checked = false;
+
+            document.getElementById("Tie Downs Install").style.visibility="visible" 
+            document.getElementById("S8").checked = false;
         }
 
     </script>
@@ -710,36 +732,37 @@
 
             
             <br>Shutdown
+            <button id="B1" class=" bg-blue-100 w-10 h-5  rounded" onclick="S()">Reset</button>
             <div id="Avionics Master Off2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S1">
                 <label for="Avionics Master Off2"> Avionics Master Off</label><br>
             </div>
             <div id="Throttle 800-1000 RPM2" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S2">
                 <label for="Throttle 800-1000 RPM2"> Throttle 800-1000 RPM2</label><br>
             </div>
             <div id="Mixture Idle Cut-Off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S3">
                 <label for="Mixture Idle Cut-Off"> Mixture Idle Cut-Off</label><br>
             </div>
             <div id="Magnetos Off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S4">
                 <label for="Magnetos Off"> Magnetos Off</label><br>
             </div>
             <div id="Master Switch Off" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S5">
                 <label for="Master Switch Off"> Master Switch Off</label><br>
             </div>
             <div id="Control Wheel Lock Install" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S6">
                 <label for="Control Wheel Lock Install"> Control Wheel Lock Install</label><br>
             </div>
             <div id="Record Hobbs, Tach on invoice" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S7">
                 <label for="Record Hobbs, Tach on invoice"> Record Hobbs, Tach on invoice</label><br>
             </div>
             <div id="Tie Downs Install" onclick="handleClick(id)">
-                <input type="checkbox">
+                <input type="checkbox" id="S8">
                 <label for="Tie Downs Install"> Tie Downs Install</label><br>
             </div>
 
