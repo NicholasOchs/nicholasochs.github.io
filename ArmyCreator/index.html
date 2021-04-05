@@ -40,6 +40,19 @@
         .dropdown a:hover {background-color: #ddd;}
         
         .show {display: block;}
+
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+}
     </style>
 
     <script>
@@ -85,7 +98,7 @@
    <div style="padding:50px;background-color:#8f8f8f;margin: 15px; float:left;">
         <div style="float:left;padding-left: 10px">
             <div class="dropdown">
-                <button onclick="DropFunc()" class="dropbtn">Factions</button>
+                <button onclick="FactionDropFunc()" class="dropbtn">Factions</button>
                 <div id="Faction" class="dropdown-content">
                   <a href="#SpaceMarine">Space Marine</a>
                   <a href="#ImperialGuard">Imperial Guard</a>
@@ -95,7 +108,7 @@
         </div>
         <div style="float:left;padding-left: 10px">
             <div class="dropdown">
-                <button onclick="DropFunc()" class="dropbtn">Points</button>
+                <button onclick="PointsDropFunc()" class="dropbtn">Points</button>
                 <div id="Points" class="dropdown-content">
                   <a href="#500">500</a>
                   <a href="#1000">1000</a>
