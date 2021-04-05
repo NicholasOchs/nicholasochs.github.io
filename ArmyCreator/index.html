@@ -44,8 +44,8 @@
 
     <script>
 
-        function DropFunc() {
-          document.getElementById("myDropdown").classList.toggle("show");
+        function DropFunc(dropid) {
+          document.getElementById(dropid).classList.toggle("show");
         }
         window.onclick = function(event) {
           if (!event.target.matches('.dropbtn')) {
@@ -68,8 +68,8 @@
    <div style="padding:50px;background-color:#8f8f8f;margin: 15px; float:left;">
         <div style="float:left;padding-left: 10px">
             <div class="dropdown">
-                <button onclick="DropFunc()" class="dropbtn">Factions</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="DropFunc(Factions)" class="dropbtn">Factions</button>
+                <div id="Factions" class="dropdown-content">
                   <a href="#SpaceMarine">Space Marine</a>
                   <a href="#ImperialGuard">Imperial Guard</a>
                   <a href="#Orks">Orks</a>
@@ -78,8 +78,8 @@
         </div>
         <div style="float:left;padding-left: 10px">
             <div class="dropdown">
-                <button onclick="DropFunc()" class="dropbtn">Points</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="DropFunc(Points)" class="dropbtn">Points</button>
+                <div id="Points" class="dropdown-content">
                   <a href="#500">500</a>
                   <a href="#1000">1000</a>
                   <a href="#1500">1500</a>
