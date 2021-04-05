@@ -44,8 +44,8 @@
 
     <script>
 
-        function DropFunc(dropid) {
-          document.getElementById(dropid).classList.toggle("show");
+        function FactionDropFunc() {
+          document.getElementById("Faction").classList.toggle("show");
         }
         window.onclick = function(event) {
           if (!event.target.matches('.dropbtn')) {
@@ -59,6 +59,23 @@
             }
           }
         }
+
+        function PointsDropFunc() {
+          document.getElementById("Points").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
     </script>
         
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -68,8 +85,8 @@
    <div style="padding:50px;background-color:#8f8f8f;margin: 15px; float:left;">
         <div style="float:left;padding-left: 10px">
             <div class="dropdown">
-                <button onclick="DropFunc(id)" class="dropbtn">Factions</button>
-                <div id="Factions" class="dropdown-content">
+                <button onclick="DropFunc()" class="dropbtn">Factions</button>
+                <div id="Faction" class="dropdown-content">
                   <a href="#SpaceMarine">Space Marine</a>
                   <a href="#ImperialGuard">Imperial Guard</a>
                   <a href="#Orks">Orks</a>
@@ -78,7 +95,7 @@
         </div>
         <div style="float:left;padding-left: 10px">
             <div class="dropdown">
-                <button onclick="DropFunc(id)" class="dropbtn">Points</button>
+                <button onclick="DropFunc()" class="dropbtn">Points</button>
                 <div id="Points" class="dropdown-content">
                   <a href="#500">500</a>
                   <a href="#1000">1000</a>
