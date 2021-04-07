@@ -91,6 +91,12 @@
           }
         }
 
+        function SelectSpaceMarine(){
+          var x =document.getElementById("FactionName");
+          x.innerHTML = "Space Marine"
+        }
+
+
     </script>
         
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -102,7 +108,7 @@
             <div class="dropdown">
                 <button onclick="FactionDropFunc()" class="dropbtn">Factions</button>
                 <div id="Faction" class="dropdown-content">
-                  <a href="#SpaceMarine">Space Marine</a>
+                  <a onClick="SelectSpaceMarine();" href="#SpaceMarine">Space Marine</a>
                   <a href="#ImperialGuard">Imperial Guard</a>
                   <a href="#Orks">Orks</a>
                 </div>
@@ -127,10 +133,19 @@
         </div>
         <div style="float:left;padding-left: 10px">
           <div class="inline-block mb-6 rounded-full bg-gray-300 pr-5 h-16 line-height: 3.75rem">
-            <img class="rounded-full float-left h-full" src="C:\Users\nicholas.ochs\Code\nicholasochs.github.io\il_570xN.1420451695_mjws.png"> <span class="ml-3">User</span>
+            <img class="rounded-full float-left h-full" src=""> <span class="ml-3">User</span>
           </div>
         </div>
     </div>
+      <div id="FactionName">
+        Faction Name
+      </div>
+      <div id="PointLimit">
+        Point Limit
+      </div>
+      <div>
+        Current Used Points
+      </div>
     <div>
         
     </div>
