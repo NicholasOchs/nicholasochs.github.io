@@ -96,6 +96,36 @@
           x.innerHTML = "Space Marine"
         }
 
+        function SelectIG(){
+          var x =document.getElementById("FactionName");
+          x.innerHTML = "Imperial Guard"
+        }
+
+        function SelectOrk(){
+          var x =document.getElementById("FactionName");
+          x.innerHTML = "Orks"
+        }
+
+        function FiveHundred(){
+          var x =document.getElementById("PointLimit");
+          x.innerHTML = "500"
+        }
+
+        function Thousand(){
+          var x =document.getElementById("PointLimit");
+          x.innerHTML = "1000"
+        }
+
+        function TFiveHundred(){
+          var x =document.getElementById("PointLimit");
+          x.innerHTML = "1500"
+        }
+
+        function TwoT(){
+          var x =document.getElementById("PointLimit");
+          x.innerHTML = "2000"
+        }
+
 
     </script>
         
@@ -109,8 +139,8 @@
                 <button onclick="FactionDropFunc()" class="dropbtn">Factions</button>
                 <div id="Faction" class="dropdown-content">
                   <a onClick="SelectSpaceMarine();" href="#SpaceMarine">Space Marine</a>
-                  <a href="#ImperialGuard">Imperial Guard</a>
-                  <a href="#Orks">Orks</a>
+                  <a onClick="SelectIG();" href="#ImperialGuard">Imperial Guard</a>
+                  <a onClick="SelectOrk();" href="#Orks">Orks</a>
                 </div>
               </div>
         </div>
@@ -118,10 +148,10 @@
             <div class="dropdown">
                 <button onclick="PointsDropFunc()" class="dropbtn">Points</button>
                 <div id="Points" class="dropdown-content">
-                  <a href="#500">500</a>
-                  <a href="#1000">1000</a>
-                  <a href="#1500">1500</a>
-                  <a href="#2000">2000</a>
+                  <a onClick="FiveHundred();" href="#500">500</a>
+                  <a onClick="Thousand();" href="#1000">1000</a>
+                  <a onClick="TFiveHundred();" href="#1500">1500</a>
+                  <a onClick="TwoT();" href="#2000">2000</a>
                 </div>
               </div>
         </div>
