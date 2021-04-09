@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .dropbtn {
+      background-color: #e8e8e9;
+      color: black;
+      padding: 20px;
+      font-size: 16px;
+      margin: 4px 2px;
+      border: none;
+      cursor: pointer;
+      padding-left: 10px;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+      background-color: #b1b1b1;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    } 
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .buttonSaveDelete {
+      background-color: #e8e8e9;
+      border: none;
+      color: black;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+  </style>
+
+  <script>
+
+    function FactionDropFunc() {
+      document.getElementById("Faction").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    function PointsDropFunc() {
+      document.getElementById("Points").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    function SelectSpaceMarine() {
+      var x = document.getElementById("FactionName");
+      x.innerHTML = "Space Marine"
+    }
+
+    function SelectIG() {
+      var x = document.getElementById("FactionName");
+      x.innerHTML = "Imperial Guard"
+    }
+
+    function SelectOrk() {
+      var x = document.getElementById("FactionName");
+      x.innerHTML = "Orks"
+    }
+
+    function FiveHundred() {
+      var x = document.getElementById("PointLimit");
+      x.innerHTML = "500"
+    }
+
+    function Thousand() {
+      var x = document.getElementById("PointLimit");
+      x.innerHTML = "1000"
+    }
+
+    function TFiveHundred() {
+      var x = document.getElementById("PointLimit");
+      x.innerHTML = "1500"
+    }
+
+    function TwoT() {
+      var x = document.getElementById("PointLimit");
+      x.innerHTML = "2000"
+    }
+
+
+  </script>
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="padding:30px;background-color:#8f8f8f;margin: 15px; float:left; width: 98%;">
+    <div class="dropdown">
+      <button onclick="FactionDropFunc()" class="dropbtn">Factions</button>
+      <div id="Faction" class="dropdown-content">
+        <a onClick="SelectSpaceMarine();" href="#SpaceMarine">Space Marine</a>
+        <a onClick="SelectIG();" href="#ImperialGuard">Imperial Guard</a>
+        <a onClick="SelectOrk();" href="#Orks">Orks</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="PointsDropFunc()" class="dropbtn">Points</button>
+      <div id="Points" class="dropdown-content">
+        <a onClick="FiveHundred();" href="#500">500</a>
+        <a onClick="Thousand();" href="#1000">1000</a>
+        <a onClick="TFiveHundred();" href="#1500">1500</a>
+        <a onClick="TwoT();" href="#2000">2000</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div style="padding-left: 10px">
+        <button class="buttonSaveDelete">Save Army</button>
+      </div>
+    </div>
+    <div class="dropdown" style="padding-left: 10px">
+      <button class="buttonSaveDelete">Delete Army</button>
+    </div>
+    <div class="dropdown" style="padding-left: 10px">
+      <div class="inline-block mb-6 rounded-full bg-gray-300 pr-5 h-16 line-height: 3.75rem">
+        <img class="rounded-full float-left h-full" src=""> <span class="ml-3">User</span>
+      </div>
+    </div>
+  </div>
+  <div id="FactionName">
+    Faction Name
+  </div>
+  <div id="PointLimit">
+    Point Limit
+  </div>
+  <div>
+    Current Used Points
+  </div>
+  <div>
+
+  </div>
+</body>
+
+</html>
