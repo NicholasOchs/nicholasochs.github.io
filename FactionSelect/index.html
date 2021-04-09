@@ -10,16 +10,6 @@
             font-weight: 800;
             padding-top: 2rem;
         }
-
-        .buttonLayout{
-            margin-top: 3rem;
-            --tw-space-x-reverse: 0;
-            margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-            margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
     </style>
 
     <head>
@@ -28,22 +18,19 @@
         </div>
     </head>
     <body>
-        <div class="buttonLayout">
-            <button id="SpaceMarine" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
-                Space Marine
+        <div class="mt-6 flex items-center justify-center space-x-6">
+            <button id="B1" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
             </button>
-            <button id="Ork" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
-                Orks
+            <button id="B2" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
             </button>
-            <button id="ImperialGuard" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
-                Imperial Guard
+            <button id="B3" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
             </button>
             <button id="B4" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
             </button>
             <button id="B5" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press5()">
             </button>
           </div>
-          <div class="buttonLayout">
+          <div class="mt-6 flex items-center justify-center space-x-6">
             <button id="B6" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press6()">
             </button>
             <button id="B7" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press7()">
@@ -54,6 +41,6 @@
             </button>
             <button id="B10" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press10()">
             </button>
-          </div>
+        </div>
     </body>
 </html>
