@@ -7,16 +7,52 @@
             font-size: 6rem;
             line-height: 1;
             text-align: center;
+            font-weight: 800;
+            padding-top: 2rem;
+        }
+
+        .buttonLayout{
+            margin-top: 3rem;
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+            justify-content: center;
         }
 
     </style>
 
     <head>
         <div class="title">
-            Faction Select
+            Faction Selector
         </div>
     </head>
     <body>
-
+        <div class="buttonLayout">
+            <button id="SpaceMarine" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press1()">
+                Space Marine
+            </button>
+            <button id="Ork" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press2()">
+                Orks
+            </button>
+            <button id="ImperialGuard" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press3()">
+                Imperial Guard
+            </button>
+            <button id="B4" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press4()">
+            </button>
+            <button id="B5" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press5()">
+            </button>
+          </div>
+          <div class="buttonLayout">
+            <button id="B6" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press6()">
+            </button>
+            <button id="B7" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press7()">
+            </button>
+            <button id="B8" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press8()">
+            </button>
+            <button id="B9" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press9()">
+            </button>
+            <button id="B10" class="bg-red-600 w-24 h-10 text-white font-bold py-2 px-4 rounded" onclick="Press10()">
+            </button>
+          </div>
     </body>
 </html>
