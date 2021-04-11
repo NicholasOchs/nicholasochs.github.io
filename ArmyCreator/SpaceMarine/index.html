@@ -137,6 +137,12 @@
       }
     }
 
+    function Unit1Multiply() {
+      num1 = document.getElementById("unit1value").value;
+      num2 = document.getElementById("Unit1").value;
+      document.getElementById("Unit1Total").innerHTML = num1 * num2;
+    }
+
 
   </script>
 
@@ -193,27 +199,31 @@
           Unit Name
         </div>
         <div class="SideBySide">
-          Individual Point Value: 
-          <div id="unit1value" class="SideBySide">
-              5
+          Individual Point Value:
+          <div type="number" id="unit1value" class="SideBySide">
+            5
           </div>
         </div>
         <div class="SideBySide" style="margin-left:15px;">
           <label for="Unit1">Number of units:</label>
 
-          <input type="number" id="Unit1" name="Unit1" min="0" max="100">
+          <input type="number" id="Unit1" name="Unit1" min="0" max="100" onclick="Unit1Multiply()">
 
         </div>
         <button class="buttonSaveDelete" onclick="UnitOneToggle()">
           Toggle Stats
         </button>
         <div class="SideBySide">
-          Current used points
+          Current used points:
+          <div id="Unit1Total">
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="unit1stats" style="padding:30px;background-color:#bdbdbd; float:left; width: 98%;margin-left: 15px; display:none">
+  <div id="unit1stats"
+    style="padding:30px;background-color:#bdbdbd; float:left; width: 98%;margin-left: 15px; display:none">
     Stat Line
   </div>
 </body>
