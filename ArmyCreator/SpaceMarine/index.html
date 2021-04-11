@@ -128,6 +128,15 @@
       x.innerHTML = "2000"
     }
 
+    function UnitOneToggle() {
+      var x = document.getElementById("Unit1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
 
   </script>
 
@@ -177,15 +186,14 @@
     Current Used Points
   </div>
 
-  <div
-    style="padding:30px;background-color:#8f8f8f;float:left; width: 98%;margin-left: 15px; margin-top: 15px;">
+  <div style="padding:30px;background-color:#8f8f8f;float:left; width: 98%;margin-left: 15px; margin-top: 15px;">
     <div>
       <div>
         <div class="SideBySide">
           Unit Name
         </div>
         <div class="SideBySide" style="margin-left:15px;">
-          <label for="tentacles">Number of units:</label>
+          <label for="Unit1">Number of units:</label>
 
           <input type="number" id="Unit1" name="Unit1" min="0" max="100">
 
