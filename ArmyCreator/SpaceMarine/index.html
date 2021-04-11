@@ -133,12 +133,7 @@
       num1 = Unit1 * 5;
       Unit2 = documnet.getElementById("Unit2Total").value;
       num2 = Unit2 * 8;
-
-
       document.getElementById("Total").innerHTML = num1 + num2;
-
-      <span class="popuptext" id="myPopup">Popup text...</span>
-
     }
 
     function UnitOneToggle() {
@@ -240,7 +235,7 @@
         <div class="SideBySide" style="margin-left:15px;">
           <label for="Unit1">Number of units:</label>
 
-          <input type="number" id="Unit1" name="Unit1" min="0" max="100" onclick="Unit1Multiply(); TotalPoints()">
+          <input type="number" id="Unit1" name="Unit1" min="0" max="100" onclick="TotalPoints()">
 
         </div>
         <button class="buttonSaveDelete" onclick="UnitOneToggle()">
