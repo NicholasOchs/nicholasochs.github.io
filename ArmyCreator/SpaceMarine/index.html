@@ -128,6 +128,15 @@
       x.innerHTML = "2000"
     }
 
+    function TotalPoints() {
+      Unit1 = documnet.getElementById("Unit1Total").value;
+      Unit2 = documnet.getElementById("Unit2Total").value;
+
+
+
+
+    }
+
     function UnitOneToggle() {
       var x = document.getElementById("unit1stats");
       if (x.style.display === "none") {
@@ -140,6 +149,20 @@
     function Unit1Multiply() {
       num2 = document.getElementById("Unit1").value;
       document.getElementById("Unit1Total").innerHTML = 5 * num2;
+    }
+
+    function UnitTwoToggle() {
+      var x = document.getElementById("unit2stats");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function Unit1Multiply() {
+      num2 = document.getElementById("Unit2").value;
+      document.getElementById("Unit2Total").innerHTML = 8 * num2;
     }
 
 
@@ -161,10 +184,10 @@
     <div class="SideBySide">
       <button onclick="PointsDropFunc()" class="dropbtn">Points</button>
       <div id="Points" class="dropdown-content">
-        <a onClick="FiveHundred();" href="#500">500</a>
-        <a onClick="Thousand();" href="#1000">1000</a>
-        <a onClick="TFiveHundred();" href="#1500">1500</a>
-        <a onClick="TwoT();" href="#2000">2000</a>
+        <a onClick="FiveHundred();" href="#500">/500</a>
+        <a onClick="Thousand();" href="#1000">/1000</a>
+        <a onClick="TFiveHundred();" href="#1500">/1500</a>
+        <a onClick="TwoT();" href="#2000">/2000</a>
       </div>
     </div>
     <div class="SideBySide">
@@ -185,11 +208,9 @@
     Faction Name
   </div>
   <div id="PointLimit">
-    Point Limit
+    /0 
   </div>
-  <div>
-    Current Used Points
-  </div>
+  <div id="Unit1Total"></div>
 
   <div style="padding:30px;background-color:#8f8f8f;float:left; width: 98%;margin-left: 15px; margin-top: 15px;">
     <div>
@@ -214,14 +235,46 @@
         </button>
         <div class="SideBySide">
           Current used points:
-          <div id="Unit1Total">
-
-          </div>
+          <div id="Unit1Total"></div>
         </div>
       </div>
     </div>
   </div>
   <div id="unit1stats"
+    style="padding:30px;background-color:#bdbdbd; float:left; width: 98%;margin-left: 15px; display:none">
+    Stat Line
+  </div>
+
+
+  <div style="padding:30px;background-color:#8f8f8f;float:left; width: 98%;margin-left: 15px; margin-top: 15px;">
+    <div>
+      <div>
+        <div class="SideBySide">
+          Unit Name
+        </div>
+        <div class="SideBySide">
+          Individual Point Value:
+          <div class="SideBySide">
+            8
+          </div>
+        </div>
+        <div class="SideBySide" style="margin-left:15px;">
+          <label for="Unit2">Number of units:</label>
+
+          <input type="number" id="Unit2" name="Unit2" min="0" max="100" onclick="Unit2Multiply()">
+
+        </div>
+        <button class="buttonSaveDelete" onclick="UnitTwoToggle()">
+          Toggle Stats
+        </button>
+        <div class="SideBySide">
+          Current used points:
+          <div id="Unit2Total"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="unit2stats"
     style="padding:30px;background-color:#bdbdbd; float:left; width: 98%;margin-left: 15px; display:none">
     Stat Line
   </div>
