@@ -129,8 +129,10 @@
     }
 
     function TotalPoints() {
-      var num1 = documnet.getElementById("Unit1Total").value;
-      var num2 = documnet.getElementById("Unit2Total").value;
+      Unit1 = documnet.getElementById("Unit1Total").value;
+      num1 = Unit1 * 5;
+      Unit2 = documnet.getElementById("Unit2Total").value;
+      num2 = Unit2 * 8;
 
 
       document.getElementById("Total").innerHTML = num1 + num2;
