@@ -128,16 +128,6 @@
       x.innerHTML = "/2000"
     }
 
-    function TotalPoints() {
-      var Total = document.getElementById("TotalPoints");
-      Unit1 = documnet.getElementById("Unit1").value;
-      num1 = Unit1 * 5;
-      Unit2 = documnet.getElementById("Unit2").value;
-      num2 = Unit2 * 8;
-      Total.innerHTML = "num1 +  num2";
-    }
-    
-
     function UnitOneToggle() {
       var x = document.getElementById("unit1stats");
       if (x.style.display === "none") {
@@ -164,6 +154,13 @@
     function Unit2Multiply() {
       num2 = document.getElementById("Unit2").value;
       document.getElementById("Unit2Total").innerHTML = 8 * num2;
+    }
+
+    function GetTotal(){
+      Unit1 = document.getElementById("Unit1Total").value;
+      Unit2 = document.getElementById("Unit2Total").value;
+
+      document.getElementById("TotalPoints").innerHTML = 8;
     }
 
 
@@ -239,10 +236,10 @@
         <div class="SideBySide" style="margin-left:15px;">
           <label for="Unit1">Number of units:</label>
 
-          <input type="number" id="Unit1" name="Unit1" min="0" max="100" onclick="Unit1Multiply(); TotalPoints()">
+          <input type="number" id="Unit1" name="Unit1" min="0" max="100" onclick="Unit1Multiply(); GetTotal()">
 
         </div>
-        <button class="buttonSaveDelete" onclick="UnitOneToggle();  TotalPoints()">
+        <button class="buttonSaveDelete" onclick="UnitOneToggle();">
           Toggle Stats
         </button>
         <div class="SideBySide">
@@ -273,7 +270,7 @@
         <div class="SideBySide" style="margin-left:15px;">
           <label for="Unit2">Number of units:</label>
 
-          <input type="number" id="Unit2" name="Unit2" min="0" max="100" onclick="Unit2Multiply(); TotalPoints()">
+          <input type="number" id="Unit2" name="Unit2" min="0" max="100" onclick="Unit2Multiply(); GetTotal()">
 
         </div>
         <button class="buttonSaveDelete" onclick="UnitTwoToggle()">
