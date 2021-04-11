@@ -130,10 +130,10 @@
 
     function UnitOneToggle() {
       var x = document.getElementById("Unit1");
-      if (x.style.display === "none") {
-        x.style.display = "block";
+      if (x.hidden === "false") {
+        x.hidden = "true";
       } else {
-        x.style.display = "none";
+        x.hidden = "false";
       }
     }
 
