@@ -73,9 +73,7 @@
       margin: .4rem 0;
     }
 
-    .hamburg{
-
-    }
+    .hamburg {}
   </style>
 
   <script>
@@ -215,7 +213,7 @@
 
   <div style="padding:30px;background-color:#a8a7a7; float:left;margin-left: 15px;margin-top: 15px;">
     <div class="SideBySide">
-      Points Used:  
+      Points Used:
     </div>
     <div id="TotalPoints" class="SideBySide">
       0
@@ -232,28 +230,35 @@
   <div style="padding:20px;background-color:#8f8f8f;float:left;width: 98%;margin-left: 15px; margin-top: 15px;">
     <div>
       <div>
-        <div class="SideBySide" style="background-color:#ebe7e7;font-size: 30px; width:300px; text-align: center; font-weight: 500;">
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:300px; text-align: center; font-weight: 500;">
           Unit Name
         </div>
-        <div class="SideBySide" style="background-color:#ebe7e7;font-size: 30px; width:350px; text-align: center; font-weight: 400; margin-left: 15px;">
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:350px; text-align: center; font-weight: 400; margin-left: 15px;">
           Individual Point Value:
           <div class="SideBySide">
             5
           </div>
         </div>
-        <div class="SideBySide" style="background-color:#ebe7e7;font-size: 30px; width:350px; text-align: center; font-weight: 400; margin-left: 15px;">
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:350px; text-align: center; font-weight: 400; margin-left: 15px;">
           <label class="SideBySide" style="font-size: 30px" for="Unit1">Number of units:</label>
 
-          <input class="SideBySide" type="number" id="Unit1" name="Unit1" min="0" max="100" onclick="Unit1Multiply(); GetTotal()">
+          <input class="SideBySide" type="number" id="Unit1" name="Unit1" min="0" max="100"
+            onclick="Unit1Multiply(); GetTotal()">
 
         </div>
-        <div class="SideBySide" style="background-color:#ebe7e7;font-size: 30px; width:400px; text-align: center; font-weight: 400; margin-left: 15px;">
-          Current used points: 
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:400px; text-align: center; font-weight: 400; margin-left: 15px;">
+          Current used points:
           <div class="SideBySide" id="Unit1Total">0</div>
         </div>
-        <button class="buttonSaveDelete" sytle="margin-left:20px" onclick="UnitOneToggle();">
-          Toggle Stats
-        </button>
+        <div style="margin-top: 15px;">
+          <button class="buttonSaveDelete" onclick="UnitOneToggle();">
+            Toggle Stats
+          </button>
+        </div>
       </div>
     </div>
   </div>
