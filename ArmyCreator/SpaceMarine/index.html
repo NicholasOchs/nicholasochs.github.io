@@ -119,24 +119,28 @@
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/500"
       points = 500
+      PointCheck();
     }
 
     function Thousand() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/1000"
       points = 1000
+      PointCheck();
     }
 
     function TFiveHundred() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/1500"
       points = 1500
+      PointCheck();
     }
 
     function TwoT() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/2000"
       points = 2000
+      PointCheck();
     }
 
     function PointCheck(){
@@ -160,6 +164,7 @@
     function Unit1Multiply() {
       num2 = document.getElementById("Unit1").value;
       document.getElementById("Unit1Total").innerHTML = 15 * num2;
+      PointCheck();
     }
 
     function UnitTwoToggle() {
@@ -174,6 +179,7 @@
     function Unit2Multiply() {
       num2 = document.getElementById("Unit2").value;
       document.getElementById("Unit2Total").innerHTML = 8 * num2;
+      PointCheck();
     }
 
     function GetTotal() {
