@@ -210,15 +210,20 @@
 
 
     function GetTotal() {
+      var total = 0;
       Unit1 = document.getElementById("Unit1").value * 9;
+      total = total+Unit1;
       Unit2 = document.getElementById("Unit2").value * 7;
+      total = total+Unit2;
       Unit3 = document.getElementById("Unit3").value * 5;
+      total = total+Unit3;
       Unit3 = document.getElementById("Unit4").value * 19;
+      total = total+Unit4;
 
 
       
-      document.getElementById("TotalPoints").innerHTML = Unit1 + Unit2 + Unit3 + Unit4;
-      UsedPoints = Unit1+Unit2+Unit3+Unit4;
+      document.getElementById("TotalPoints").innerHTML = Total;
+      UsedPoints = Total;
       PointCheck();
     }
 
