@@ -292,6 +292,17 @@
       PointCheck();
     }
 
+    function Reset(){
+      document.getElementById("Unit1").value = 0
+      document.getElementById("Unit2").value = 0
+      document.getElementById("Unit3").value = 0
+      document.getElementById("Unit4").value = 0
+      document.getElementById("Unit5").value = 0
+      document.getElementById("Unit6").value = 0
+      document.getElementById("Unit7").value = 0
+      document.getElementById("Unit8").value = 0
+    }
+
 
   </script>
 
@@ -330,7 +341,7 @@
       </div>
     </div>
     <div class="SideBySide" style="padding-left: 10px">
-      <button class="buttonSaveDelete"><a onclick="return confirm('Are you sure?')">Delete</a></button>
+      <button onclick="Reset()" class="buttonSaveDelete"><a onclick="return confirm('Are you sure?')">Delete</a></button>
     </div>
   </div>
 
