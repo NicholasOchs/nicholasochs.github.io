@@ -208,6 +208,20 @@
       document.getElementById("Unit4Total").innerHTML = 19 * num;
     }
 
+    function UnitFiveToggle() {
+      var x = document.getElementById("unit5stats");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function Unit4Multiply() {
+      num = document.getElementById("Unit5").value;
+      document.getElementById("Unit5Total").innerHTML = 14 * num;
+    }
+
 
     function GetTotal() {
       var total = 0;
@@ -219,6 +233,8 @@
       total = total+Unit3;
       Unit4 = document.getElementById("Unit4").value * 19;
       total = total+Unit4;
+      Unit5 = document.getElementById("Unit5").value * 14;
+      total = total+Unit5;
 
 
       
@@ -473,6 +489,52 @@
     <div class="SideBySide" style="margin-left: 40px;">W:2</div>
     <div class="SideBySide" style="margin-left: 40px;">Ld:6</div>
     <div class="SideBySide" style="margin-left: 40px;">Sv:6+</div>
+  </div>
+
+  <div style="padding:10px;background-color:#8f8f8f;float:left;width: 98%;margin-left: 15px; margin-top: 15px;">
+    <div>
+      <div>
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:300px; text-align: center; font-weight: 500;">
+          Terminator
+        </div>
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:350px; text-align: center; font-weight: 400; margin-left: 15px;">
+          Individual Point Value:
+          <div class="SideBySide">
+            14
+          </div>
+        </div>
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:350px; text-align: center; font-weight: 400; margin-left: 15px;">
+          <label class="SideBySide" style="font-size: 30px" for="Unit5">Number of units:</label>
+
+          <input class="SideBySide" type="number" id="Unit5" name="Unit5" min="0" max="100"
+            onclick="Unit5Multiply(); GetTotal()">
+
+        </div>
+        <div class="SideBySide"
+          style="background-color:#ebe7e7;font-size: 30px; width:400px; text-align: center; font-weight: 400; margin-left: 15px;">
+          Current used points:
+          <div class="SideBySide" id="Unit5Total">0</div>
+        </div>
+        <div class="SideBySide" style="margin-left: 15px;">
+          <button class="buttonSaveDelete" onclick="UnitFiveToggle();">
+            Toggle Stats
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="unit5stats"
+    style="padding:10px;background-color:#bdbdbd; float:left; width: 98%; display:none;  text-align: center; font-weight: 500;font-size: 20px; margin-left: 15px;">
+    <div class="SideBySide" style="margin-left: 40px;">M:5"</div>
+    <div class="SideBySide" style="margin-left: 40px;">WS:3+</div>
+    <div class="SideBySide" style="margin-left: 40px;">BS:3+</div>
+    <div class="SideBySide" style="margin-left: 40px;">A:1</div>
+    <div class="SideBySide" style="margin-left: 40px;">W:2</div>
+    <div class="SideBySide" style="margin-left: 40px;">Ld:7</div>
+    <div class="SideBySide" style="margin-left: 40px;">Sv:4+</div>
   </div>
 
   
