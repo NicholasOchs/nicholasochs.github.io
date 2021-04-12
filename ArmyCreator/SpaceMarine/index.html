@@ -308,16 +308,20 @@
     <div class="SideBySide">
       <a href="https://nicholasochs.github.io/FactionSelect/">
         <button class="buttonSaveDelete" onclick=>
-          <div class="hamburg"></div>
-          <div class="hamburg"></div>
-          <div class="hamburg"></div>
           Select Factions
         </button>
       </a>
     </div>
 
     <div class="SideBySide">
-      <button onclick="PointsDropFunc()" class="dropbtn">Points</button>
+      <button onclick="PointsDropFunc()" class="dropbtn">
+        <div class="SideBySide">
+        <div class="hamburg"></div>
+        <div class="hamburg"></div>
+        <div class="hamburg"></div>
+        </div>
+        Points
+      </button>
       <div id="Points" class="dropdown-content">
         <a onClick="FiveHundred();" href="#500">500</a>
         <a onClick="Thousand();" href="#1000">1000</a>
