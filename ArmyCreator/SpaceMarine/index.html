@@ -292,7 +292,10 @@
       PointCheck();
     }
 
-    function Reset(){
+    function Reset() {
+      var txt;
+      var r = confirm("Press a button!");
+      if (r == true) {
       document.getElementById("Unit1").value = 0
       document.getElementById("Unit2").value = 0
       document.getElementById("Unit3").value = 0
@@ -301,6 +304,8 @@
       document.getElementById("Unit6").value = 0
       document.getElementById("Unit7").value = 0
       document.getElementById("Unit8").value = 0
+      PointCheck();
+      } 
     }
 
 
@@ -341,7 +346,7 @@
       </div>
     </div>
     <div class="SideBySide" style="padding-left: 10px">
-      <button class="buttonSaveDelete" onclick="Reset();PointCheck()">Delete </button>
+      <button class="buttonSaveDelete" onclick="Reset()">Delete </button>
     </div>
   </div>
 
