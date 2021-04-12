@@ -73,10 +73,15 @@
       margin: .4rem 0;
     }
 
-    .hamburg {}
+    .hamburg {
+
+    }
   </style>
 
   <script>
+
+    var points = 500
+    var UsedPoints = 0
 
     function FactionDropFunc() {
       document.getElementById("Faction").classList.toggle("show");
@@ -113,21 +118,34 @@
     function FiveHundred() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/500"
+      points = 500
     }
 
     function Thousand() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/1000"
+      points = 1000
     }
 
     function TFiveHundred() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/1500"
+      points = 1500
     }
 
     function TwoT() {
       var x = document.getElementById("PointLimit");
       x.innerHTML = "/2000"
+      points = 2000
+    }
+
+    function PointCheck(){
+      if(UsedPoints<=points){
+        document.getElementById(PointStore).style.backgroundColor="#87eb7e"
+      }
+      else{
+        document.getElementById(PointStore).style.backgroundColor="#d36556"
+      }
     }
 
     function UnitOneToggle() {
@@ -162,7 +180,9 @@
       Unit1 = document.getElementById("Unit1").value * 15;
       Unit2 = document.getElementById("Unit2").value * 8;
 
+      
       document.getElementById("TotalPoints").innerHTML = Unit1 + Unit2;
+      UsedPoints = Unit1+Unit2
     }
 
 
@@ -211,7 +231,7 @@
     </div>
   </div>
 
-  <div style="padding:30px;background-color:#a8a7a7; float:left;margin-left: 15px;margin-top: 15px;">
+  <div id="PointStore" style="padding:30px;background-color:#d36556; float:left;margin-left: 15px;margin-top: 15px;">
     <div class="SideBySide">
       Points Used:
     </div>
