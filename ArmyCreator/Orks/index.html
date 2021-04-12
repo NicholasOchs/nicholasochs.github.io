@@ -292,6 +292,22 @@
       PointCheck();
     }
 
+    function Reset() {
+      var txt;
+      var r = confirm("Are you sure you want to set all units to zero");
+      if (r == true) {
+      document.getElementById("Unit1").value = 0;
+      document.getElementById("Unit2").value = 0;
+      document.getElementById("Unit3").value = 0;
+      document.getElementById("Unit4").value = 0;
+      document.getElementById("Unit5").value = 0;
+      document.getElementById("Unit6").value = 0;
+      document.getElementById("Unit7").value = 0;
+      document.getElementById("Unit8").value = 0;
+      GetTotal();
+      } 
+    }
+
 
   </script>
 
@@ -330,7 +346,7 @@
       </div>
     </div>
     <div class="SideBySide" style="padding-left: 10px">
-      <button class="buttonSaveDelete">Delete Army</button>
+      <button class="buttonSaveDelete" onclick="Reset()">Reset </button>
     </div>
   </div>
 
